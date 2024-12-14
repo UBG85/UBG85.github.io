@@ -38,26 +38,6 @@
   margin: 0;
 }
 
-.nav-buttons {
-  display: flex;
-}
-
-.nav-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  margin-left: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-  background-color: #45a049;
-}
-
 .container {
   display: flex;
   justify-content: flex-start;
