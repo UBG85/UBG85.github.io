@@ -12,19 +12,6 @@
   z-index: -1;    
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-}
-
 .title-box {
   background-color: white;
   padding: 15px 30px;
@@ -73,10 +60,6 @@
   margin-bottom: 10px;
 }
 
-.game-item:hover {
-  background-color: #45a049;
-}
-
 .game-item .game-details {
   position: absolute;
   top: 0;
@@ -90,10 +73,6 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-
-.game-item:hover .game-details {
-  display: flex;
 }
 
 .game-item a {
