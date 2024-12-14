@@ -26,7 +26,7 @@
       var buildUrl = "WebGL";
       var loaderUrl = buildUrl + "/v03 WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/v03 WebGL.data",
+        dataUrl: "../webglgames/v03 WebGL.data",
         frameworkUrl: buildUrl + "/v03 WebGL.framework.js",
         codeUrl: buildUrl + "/v03 WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
