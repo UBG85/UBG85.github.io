@@ -42,7 +42,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100vh;
   flex-direction: row;
   gap: 20px;
   padding-top: 80px; 
