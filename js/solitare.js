@@ -23,7 +23,7 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "../js/WebGL";
+      var buildUrl = "../WebGL";
       var loaderUrl = buildUrl + "/v03 WebGL.loader.js";
       var config = {
         dataUrl: buildUrl + "/v03 WebGL.data",
