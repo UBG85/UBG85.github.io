@@ -25,20 +25,37 @@
   z-index: 10;
 }
 
+.title-box {
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
 .title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
+  color: #333;
+  margin: 0;
 }
 
-.nav-links a {
+.nav-buttons {
+  display: flex;
+}
+
+.nav-button {
+  background-color: #4CAF50;
   color: white;
-  text-decoration: none;
-  margin: 0 15px;
+  border: none;
+  padding: 10px 20px;
   font-size: 18px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #4CAF50;
+.nav-button:hover {
+  background-color: #45a049;
 }
 
 .container {
@@ -48,7 +65,7 @@
   height: 100vh;
   flex-direction: row;
   gap: 20px;
-  padding-top: 80px;
+  padding-top: 80px; 
 }
 
 .game-item {
