@@ -1,9 +1,7 @@
-// Game State
 var GAME_RUNNING = false;
 var i = 0,
     timeStart;
 
-// Preventing Map On Show ContextMenu On RightClick
 $("#map").on({
     "contextmenu": function (e) {
         console.log("ctx menu button:", e.which);
@@ -12,12 +10,9 @@ $("#map").on({
         e.preventDefault();
     }
 });
-
-// Defining MapData for Reset Button
 var mapData;
 
 
-// Building map based on the "basic", "medium" and "hard" defficulties
 $('.settings a').click(function (e) {
     if ($(this).hasClass("active")) return;
 
@@ -55,7 +50,6 @@ $('.buildmap').click(function (e) {
     e.preventDefault();
 });
 
-// Reseting the map.
 $('.reset').click(function (e) {
     mineMap("#map", mapData.X, mapData.Y, mapData.mineNumber);
 });
@@ -87,12 +81,10 @@ var timeFormatter = function (count) {
     return minute + " : " + second;
 }
 
-// Aligning the map vertical middle.
 var verticalAlign = function (rows) {
     var spanHeight = $('#map li').outerHeight(),
         mapHeight = rows * spanHeight + 5;
         $('#map').height(mapHeight);
 }
 
-// Building the default map
 mapData = mineMap("#map", 10, 10, 20);
