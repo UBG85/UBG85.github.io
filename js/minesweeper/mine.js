@@ -24,20 +24,18 @@ var mineMap = function( map , x , y , mineNumber ) {
         IS_FINISHED = true;
         GAME_RUNNING = false;
         timerPause();
-        alert("Yesssss! You Win!!!!!");
+        alert("nice :D");
     }
 
     // Define Lose Function
     var lose = function() {
-        // Set gmae state tu finished.
         IS_FINISHED = true;
         GAME_RUNNING = false;
         timerPause();
 
-        // Check for correct or wrong flags
         checkFlag();
 
-        alert("NAN NA NANA NA! You Lose :D !!!!!");
+        alert("sad");
     }
 
 
@@ -45,10 +43,6 @@ var mineMap = function( map , x , y , mineNumber ) {
         for ( var i =0; i< x; i++) {
             mineArea[i] = new Array(y);
         }
-
-
-
-    // Building The Map
 
     $(map).html("");
 	for(var i = 0; i < y ; i++ ){
