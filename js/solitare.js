@@ -56,4 +56,3 @@
         });
       };
       document.body.appendChild(script);
-    </script>
