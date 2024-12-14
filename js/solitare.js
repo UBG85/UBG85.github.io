@@ -36,8 +36,6 @@
         showBanner: unityShowBanner,
       };
 
-      loadingBar.style.display = "block";
-
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
