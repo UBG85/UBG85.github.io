@@ -35,9 +35,6 @@
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
-      
-      canvas.style.width = "960px";
-        canvas.style.height = "600px";
 
       loadingBar.style.display = "block";
 
