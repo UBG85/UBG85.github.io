@@ -1,1 +1,85 @@
 
+ body {
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; /* Gray background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Title at the top left */
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Game item container */
+        .game-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            width: 250px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .game-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .game-item:hover {
+            background-color: #45a049;
+        }
+
+        /* Game details on hover */
+        .game-item .game-details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .game-item:hover .game-details {
+            display: flex;
+        }
+
+        /* Link style */
+        .game-item a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
