@@ -23,7 +23,7 @@ var container = document.querySelector("#unity-container");
         updateBannerVisibility();
       }
 
-      var buildUrl = "Solitare";
+      var buildUrl = "../js/Solitare";
       var loaderUrl = buildUrl + "/v03 WebGL.loader.js";
       var config = {
         dataUrl: buildUrl + "/v03 WebGL.data",
