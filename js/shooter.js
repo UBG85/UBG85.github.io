@@ -15,7 +15,7 @@
 	/* Game Objects */
 	function Shooter() {
 		this.img = new Image();
-		this.img.src = "shooter.png";
+		this.img.src = "../images/shooter.png";
 		this.deg = 0;
 		this.speed = 10;
 		this.width = 60;
