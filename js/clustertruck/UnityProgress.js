@@ -1,5 +1,5 @@
 function UnityProgress (dom) {
-    var root_path = './TemplateData';
+    var root_path = '../../images/';
     this.progress = 0.0;
     this.message = "";
     this.dom = dom;
@@ -26,7 +26,7 @@ function UnityProgress (dom) {
   
     var progressFrame = document.createElement("img");
     progressFrame.setAttribute('id', 'progress-frame');
-    progressFrame.src = root_path + "/loadingbar.png"; 
+    progressFrame.src = root_path + "/progress-bar-empty-dark.png"; 
     progressFrameLoader.appendChild(progressFrame);
     this.progressFrame = progressFrame;
   
@@ -36,7 +36,7 @@ function UnityProgress (dom) {
   
     var progressBar = document.createElement("img");
     progressBar.setAttribute('id', 'progress-bar');
-    progressBar.src = root_path + "/fullbar.png"; 
+    progressBar.src = root_path + "/progress-bar-full-dark.png"; 
     progressBarLoader.appendChild(progressBar);
     this.progressBar = progressBar;
   
@@ -59,9 +59,7 @@ function UnityProgress (dom) {
     }
   
     this.SetMessage = function (message) {
-      if (message == "Loading WebGL Player, Please wait...") {
-        message += '<img src="' + root_path + '/gears.gif" />'
-      } else if ((m = message.match(/^Downloading data... \(([0-9]+)\/([0-9]+)\)/)) !== null) {
+     if ((m = message.match(/^Downloading data... \(([0-9]+)\/([0-9]+)\)/)) !== null) {
         message = this.RewriteMessage(m);
       }
   
